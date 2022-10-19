@@ -1,0 +1,35 @@
+body{
+    color: white;
+    background-image: url("assets/bg.svg");
+}
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.header{
+    font-size: 8rem;
+    font-family: 'Holtwood One SC', serif;
+    margin-bottom: -262px;
+    margin-top: -84px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.sub{
+    font-size: 2.5rem;
+    font-family: 'Holtwood One SC', serif;
+    margin-left: 38px;
+}
+.message{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -41px;
+    line-height: 0.3;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
