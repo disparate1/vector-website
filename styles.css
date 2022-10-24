@@ -3,6 +3,7 @@ body{
     background-image: url("assets/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .container{
     display: flex;
