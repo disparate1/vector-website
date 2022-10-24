@@ -12,17 +12,20 @@
 <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 </head>
 <body>
+    <img id="zend" src="assets/icons/zend.svg" width="200px">
     <div class="container">
        
             <img src="assets/laptop.svg" width="600" alt="laptop">   
         <div class="text">
-
+            
             <div id="castor">
+                
                 <img src="assets/icons/castor.svg" width="300">
-                <img id="eye1" src="assets/icons/eye.svg" width="10px" style="top: 136px;left: 500px;">
-                <img id="eye2" src="assets/icons/eye.svg" width="10px" style="top: 136px;left: 558px;">
+                <img id="eye1" src="assets/icons/eye.svg" width="10px">
+                <img id="eye2" src="assets/icons/eye.svg" width="10px">
                   
             </div>
+            
             <div class="header">
                 <p>CODING</p>
             </div>
@@ -63,6 +66,7 @@
     <script>
         const eye1 = document.querySelector('#eye1') 
         const eye2 = document.querySelector('#eye2') 
+        const zend = document.querySelector('#zend') 
         const anchor = document.getElementById('castor') 
         const rekt = anchor.getBoundingClientRect(); 
         const anchorX = rekt.left + rekt.width / 2; 
@@ -76,6 +80,10 @@
 
         eye2.style.top = topLocation+35 +'px';
         eye2.style.left = leftLocation+80 +'px';
+
+        //position zend
+        zend.style.top = topLocation-70 +'px';
+        zend.style.left = leftLocation-200 +'px';
 
 document.addEventListener('mousemove', e=>{
 
@@ -97,6 +105,16 @@ const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
 
     }
     </script>
-    
+
+    <script>
+        //message
+        window.addEventListener("keypress", (event) => {
+                if(event.code === "KeyW"){
+                    const zend = document.getElementById('zend');
+                    
+                    zend.style.opacity == '1' ? zend.style.opacity=0 : zend.style.opacity= 1;
+                }
+});
+    </script>
 </body>
 </html>
