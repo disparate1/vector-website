@@ -17,7 +17,7 @@ body{
     font-size: 8rem;
     font-family: 'Holtwood One SC', serif;
     margin-bottom: -262px;
-    margin-top: -218px;
+    margin-top: -121px;
     z-index: -1;
     opacity: 0.4;
 }
@@ -48,18 +48,44 @@ body{
     font-weight: 600;
     font-size: 0.9rem;
 }
-.morf{
-    width: 50px;
-    height: 50px;
-    rotate: 90deg;
-}
 
 #castor{
-    align-self: flex-end;
+    position: absolute;
 }
-#eye1,#eye2,#zend{
+#eye1,#eye2{
+    position: absolute;
+}
+#left-socket{
+    left: 21px;
+    right: auto;
+    top: 37px;
+    width: 18px;
+    height: 23px;
+    position: absolute;
+}
+#right-socket{
+    left: 78px;
+    right: auto;
+    top: 37px;
+    width: 18px;
+    height: 23px;
     position: absolute;
 }
 #zend{
     opacity: 0;
+    left: auto;
+    right: 121px;
+    position: relative;
+}
+
+#creature{
+    bottom: 218px;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+}
+#trunk{
+    bottom: 0;
+    left: 47%;
+    position: absolute;
 }

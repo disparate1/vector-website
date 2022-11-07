@@ -9,22 +9,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 </head>
 <body>
-    <img id="zend" src="assets/icons/zend.svg" width="200px">
+    <div id="creature">
+        <img id="zend" src="assets/icons/zend.svg" width="200px">
+        <div id="castor">
+                    
+            <img src="assets/icons/castor.svg" width="300">
+            <div id="right-socket">
+                <img id="eye1" src="assets/icons/eye.svg" width="10px">
+            </div>
+            <div id="left-socket">
+                <img id="eye2" src="assets/icons/eye.svg" width="10px">
+            </div>
+              
+        </div>
+       
+    </div>
+    <div id="trunk">
+        <img src="assets/trunck.svg" width="300px">
+    </div>
     <div class="container">
        
             <img src="assets/laptop.svg" width="600" alt="laptop">   
         <div class="text">
             
-            <div id="castor">
-                
-                <img src="assets/icons/castor.svg" width="300">
-                <img id="eye1" src="assets/icons/eye.svg" width="10px">
-                <img id="eye2" src="assets/icons/eye.svg" width="10px">
-                  
-            </div>
+
             
             <div class="header">
                 <p>CODING</p>
@@ -45,29 +55,13 @@
                 <img src="assets/icons/youtube.svg" width="20" height="20">
                 <img src="assets/icons/twitter.svg" width="20" height="20">
         </div>
-        <div class="morf">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
-                <path id="line" fill="transparent" stroke="#FFFFFF" stroke-linejoin="round" stroke-width="15" d="M10 300L590 300Z"></path>
-                <path id="circle" style="visibility:hidden" d="M10,300a290,290 0 1,0 580,0a290,290 0 1,0 -580,0z"></path>
-            </svg>
-        </div>
-
-        
+     
     </div>
-
-
-    <script>
-        const tween = KUTE.fromTo('#line', {path: '#line' }, { path: '#circle' },
-            { repeat:999, duration:3000, yoyo: true, easing: 'easingCubicInOut', delay: 1000}
-            );
-            tween.start();
-    </script>
 
     <script>
         const eye1 = document.querySelector('#eye1') 
         const eye2 = document.querySelector('#eye2') 
-        const zend = document.querySelector('#zend') 
-        const anchor = document.getElementById('castor') 
+        const anchor = document.getElementById('creature') 
         const rekt = anchor.getBoundingClientRect(); 
         const anchorX = rekt.left + rekt.width / 2; 
         const anchorY = rekt.top + rekt.height / 2; 
@@ -75,15 +69,7 @@
         //position eyes:
         const leftLocation = rekt.left;
         const topLocation = rekt.top;
-        eye1.style.top = topLocation+35 +'px';
-        eye1.style.left = leftLocation+17 +'px';
 
-        eye2.style.top = topLocation+35 +'px';
-        eye2.style.left = leftLocation+80 +'px';
-
-        //position zend
-        zend.style.top = topLocation-70 +'px';
-        zend.style.left = leftLocation-200 +'px';
 
 document.addEventListener('mousemove', e=>{
 
