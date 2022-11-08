@@ -13,6 +13,7 @@
 <body>
     <div id="creature">
         <img id="zend" src="assets/icons/zend.svg" width="200px">
+        <img id="rib" src="assets/rib.svg" width="100px">
         <div id="castor">
                     
             <img src="assets/icons/castor.svg" width="300">
@@ -103,5 +104,17 @@ const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
                 }
 });
     </script>
+
+<script>
+    //message
+    const rib = document.getElementById('rib');
+    rib.addEventListener("click", (event) => {
+        console.log(event);
+        event.target.style.opacity= 0;
+        event.target.style.top = 102+'px';
+        event.target.style.opacity= 1;
+        event.target.style.transform= "translateY(200px)";      
+});
+</script>
 </body>
 </html>
